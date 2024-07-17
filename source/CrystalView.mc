@@ -181,9 +181,9 @@ class CrystalView extends Ui.WatchFace {
 		// Update hours/minutes colours after theme colours have been set.
 		updateHoursMinutesColours();
 
-		if (CrystalApp has :checkPendingWebRequests) { // checkPendingWebRequests() can be excluded to save memory.
-			App.getApp().checkPendingWebRequests();
-		}
+		// if (CrystalApp has :checkPendingWebRequests) { // checkPendingWebRequests() can be excluded to save memory.
+		// 	App.getApp().checkPendingWebRequests();
+		// }
 	}
 
 	// Select normal font, based on whether time zone feature is being used.
@@ -439,9 +439,9 @@ class CrystalView extends Ui.WatchFace {
 
 		// Rather than checking the need for background requests on a timer, or on the hour, easier just to check when exiting
 		// sleep.
-		if (CrystalApp has :checkPendingWebRequests) { // checkPendingWebRequests() can be excluded to save memory.
-			App.getApp().checkPendingWebRequests();
-		}
+		// if (CrystalApp has :checkPendingWebRequests) { // checkPendingWebRequests() can be excluded to save memory.
+		// 	App.getApp().checkPendingWebRequests();
+		// }
 
 		// If watch requires burn-in protection, set flag to false when entering sleep.
 		var settings = Sys.getDeviceSettings();
